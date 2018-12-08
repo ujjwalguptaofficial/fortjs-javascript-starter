@@ -1,0 +1,29 @@
+{
+  "name": "fort-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack --config webpack.config.js",
+    "webpack:watch": "webpack --config webpack.config.js --watch",
+    "build": "npm run webpack",
+    "start": "npm run webpack:watch && opn http://localhost:4000"
+  },
+  "author": "Ujjwal Gupta",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-decorators": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "babel-loader": "^8.0.4",
+    "nodemon-webpack-plugin": "^4.0.6",
+    "opn-cli": "^4.0.0",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "eshtml": "^0.1.0",
+    "fortjs": "^0.9.0"
+  }
+}

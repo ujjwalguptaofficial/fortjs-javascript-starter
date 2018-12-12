@@ -24,6 +24,6 @@
   },
   "dependencies": {
     "eshtml": "^0.1.0",
-    "fortjs": "^0.9.0"
+    "fortjs": "^1.0.0"
   }
 }

@@ -7,19 +7,23 @@ import {
 import {
     FortViewEngine
 } from 'eshtml';
+import * as path from "path";
 
-export * from './views/index';
 
 export class App extends Fort {
     constructor() {
         super();
-        this.routes = routes
+        this.routes = routes;
+        this.viewEngine = FortViewEngine;
     }
 }
 
 new App().create({
-    defaultPath: "default",
-    viewEngine: FortViewEngine
+    defaultPath: "/default",
+    folders: [{
+        alias: "/",
+        path: path.join(__dirname, "../static")
+    }]
 });
 
 console.log("Your fort is located at address - localhost:4000");

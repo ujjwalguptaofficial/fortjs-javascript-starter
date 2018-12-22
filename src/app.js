@@ -24,6 +24,6 @@ new App().create({
         alias: "/",
         path: path.join(__dirname, "../static")
     }]
-});
-
-console.log("Your fort is located at address - localhost:4000");
+}).then(() => {
+    console.log("Your fort is located at address - localhost:4000");
+})

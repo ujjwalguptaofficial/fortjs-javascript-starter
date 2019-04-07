@@ -29,5 +29,8 @@
   "dependencies": {
     "fortjs": "^1.5.5"
   },
-  "language": "javascript"
+  "project": {
+    "framework": "fortjs",
+    "language": "typescript"
+  }
 }

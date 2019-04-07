@@ -1,9 +1,7 @@
 import {
     Controller,
     DefaultWorker,
-    htmlResult,
     textResult,
-    renderView,
     viewResult
 } from "fortjs";
 

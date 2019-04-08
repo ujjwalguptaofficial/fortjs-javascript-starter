@@ -2,7 +2,8 @@ import {
     Controller,
     DefaultWorker,
     textResult,
-    viewResult
+    viewResult,
+    Worker
 } from "fortjs";
 
 export class DefaultController extends Controller {

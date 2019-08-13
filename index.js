@@ -3,7 +3,6 @@ import {
     App
 } from "./app";
 
-const app = new App();
 export const createApp = async () => {
     const app = new App();
     await app.create({

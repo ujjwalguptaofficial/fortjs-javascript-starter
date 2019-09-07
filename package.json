@@ -25,14 +25,14 @@
     "cross-env": "^5.2.0",
     "eslint": "^5.10.0",
     "jest": "^24.8.0",
-    "nodemon-webpack-plugin": "^4.0.6",
+    "nodemon-webpack-plugin": "^4.1.1",
     "tslint-config-security": "^1.13.0",
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.6",
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
-    "fortjs": "^1.7.1"
+    "fortjs": "^1.7.2"
   },
   "project": {
     "framework": "fortjs",

@@ -1,5 +1,5 @@
 import { DefaultController } from "./default_controller";
-import { viewResult, Fort } from "fortjs";
+import { viewResult } from "fortjs";
 import { createApp } from "../index";
 
 describe('DefaultController', () => {
@@ -11,6 +11,7 @@ describe('DefaultController', () => {
     });
 
     it('index', async () => {
+        controller.initialize();
         const expectedResult = await viewResult('default/index.html', {
             title: 'FortJs'
         });

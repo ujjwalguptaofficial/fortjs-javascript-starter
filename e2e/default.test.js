@@ -4,13 +4,14 @@ import { createApp } from "..";
 
 describe('/default', () => {
 
-    const httpRequest = axios.create({
-        baseURL: 'http://localhost:4000',
-        timeout: 1000
-    });
     let app;
+    let httpRequest;
     beforeAll(async () => {
         app = await createApp();
+        httpRequest = axios.create({
+            baseURL: process.env.APP_URL,
+            timeout: 1000
+        });
     });
 
     it('index', async () => {

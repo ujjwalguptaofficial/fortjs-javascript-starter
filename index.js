@@ -16,8 +16,8 @@ export const createApp = async () => {
 };
 
 if (process.env.NODE_ENV !== "test") {
-    createApp().then(() => {
-        console.log(`Your fort is located at address - ${process.env.APP_URL}`);
+    createApp().then((app) => {
+        app.logger.debug(`Your fort is located at address - ${process.env.APP_URL}`);
     }).catch(err => {
         console.error(err);
     });

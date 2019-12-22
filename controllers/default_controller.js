@@ -1,11 +1,4 @@
-import {
-    Controller,
-    DefaultWorker,
-    textResult,
-    viewResult,
-    Worker,
-    Assign
-} from "fortjs";
+import { Controller, DefaultWorker, textResult, viewResult, Worker, Assign } from "fortjs";
 
 export class DefaultController extends Controller {
     @DefaultWorker()

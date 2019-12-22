@@ -1,9 +1,5 @@
-import {
-    Fort, MustacheViewEngine
-} from 'fortjs';
-import {
-    routes
-} from './routes';
+import { Fort, MustacheViewEngine } from 'fortjs';
+import { routes } from './routes';
 
 
 export class App extends Fort {
